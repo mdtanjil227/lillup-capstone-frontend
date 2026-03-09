@@ -1,0 +1,181 @@
+.container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, #ffebee, #ffffff);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-content: left;
+    color: #e63946;
+    font-weight: bold;
+    margin-top: 5%;
+  }
+  
+  .back-link {
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .illustration {
+    /* Replace with your illustration dimensions */
+    width: 50%;
+  }
+  
+  .sign-in-box {
+    width: 300px;
+    text-align: center;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+  }
+  
+  .google-signin-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #db4437;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .google-logo {
+    background: white;
+    color: #db4437;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 2px;
+  }
+  
+  .new-user {
+    font-size: 0.9rem;
+  }
+  
+  .download-link {
+    color: #e63946;
+    text-decoration: none;
+  }
+  
+  .footer {
+    background-color: transparent;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .footer-links a {
+    color: #e63946;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  /* ... other styles ... */
+  
+  .illustration img {
+    max-width: 100%;
+    height: auto;
+    /* Adjust the following as needed to fit the design */
+    max-height: 400px;
+  }
+  
+  /* ... other styles ... */
+  
+  /* ... other styles ... */
+  
+  .logo-header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    max-width: 100%;
+    height: auto;
+    /* Adjust the following as needed to fit the design */
+    max-height: 120px; /* You can adjust this value to make the logo bigger */
+  }
+  
+  /* ... other styles ... */
+  
+  .illustration img {
+    max-width: 100%;
+    height: auto;
+    /* Adjust the following as needed to fit the design */
+    max-height: 400px;
+  }
+  
+  /* ... other styles ... */
+  /* ... other styles ... */
+  
+  .logo-header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    max-width: 100%;
+    height: auto;
+    /* Adjust the following as needed to fit the design */
+    max-height: 120px; /* You can adjust this value to make the logo bigger */
+  }
+  
+  /* ... other styles ... */
+  
+  .illustration img {
+    max-width: 100%;
+    height: auto;
+    /* Adjust the following as needed to fit the design */
+    max-height: 400px;
+  }
+  
+  
+  /* ... other styles ... */
+  
+  /* Other styles... */
+  
+  /* ... existing styles ... */
+  
+  .back-link {
+    display: inline-block;
+    position: absolute;
+    top: 32px; /* Adjust as needed based on the actual layout */
+    left: 32px; /* Adjust as needed based on the actual layout */
+    font-size: 1rem;
+    color: #000; /* Color for the back link text */
+    text-decoration: none;
+    padding: 8px 16px; /* Padding for the clickable area */
+    font-weight: bold; /* if you need the font to be bold */
+  }
+  
+  /* Adjust the z-index for logo-header to ensure it's on top of the back link if they overlap */
+  .logo-header {
+    position: relative;
+    z-index: 10; /* Higher than the z-index of .back-link if needed */
+    /* ... other styles ... */
+  }
+  
+  
