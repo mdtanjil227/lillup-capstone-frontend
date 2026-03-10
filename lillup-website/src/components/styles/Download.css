@@ -1,431 +1,157 @@
-.App {
-  text-align: center;
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.Background1{
- 
-
-  position: relative;
-  bottom: 10px;
-
-}
-.Background2{
-
-  position: relative;
-  top: 200px;
-  right: 60px;
-
-  
-  
+.download-page{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  overflow:hidden;
+  position:relative;
 }
 
-.Background1-size{
-  width: 100%;
-  height: 100%;
-}
+/* TOP BAR */
 
-.Background2-size{
-  width: 100%;
-  height: 100%;
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:40px 80px;
 }
-
 
 .logo{
-
-
- width: 150px;
-height: 100px;
-position: relative;
-margin-left: 6%;
-left: 120px; 
-bottom: 30px;
+  width:130px;
 }
 
-.Back{
-  position: relative;
-  width: 50px;
-  left: 800px; 
-  bottom: 150px;
-  cursor: pointer;
-  
+.home-button{
+  font-size:18px;
+  text-decoration:none;
+  color:#333;
+  border:2px solid #ff2b2b;
+  padding:8px 18px;
+  border-radius:6px;
 }
 
-.Asset{
-  position: relative;
-  bottom: 60px;
-  margin-left: 6%;
+/* MAIN CONTENT */
 
-
-}
-.GooglePlay{
-  width: 200px;
-  height:60px;
-  position: relative;
-  left: 600px;
-  bottom: 270px;
-  cursor: pointer;
-}
-.qrCode{
-  width: 200px;
-  height: 200px;
-  position: relative;
-  left: 400px;
-bottom:50px;
-}
-.HowToDownload{
-  position: relative;
-  left: 150px;
-  width: 300px;
-  top: 120px;
-}
-.Sign-in{
-text-align: center;
-position: relative;
-top: 100px;
-left: 1020px;
-width: 50px;
-color: rgb(63, 63, 231);
-cursor: pointer;
-}
-.Sign-in2{
-  text-align: center;
-  position: relative;
-  top: 65px;
-  left: 1070px;
-  width: 100px;
-  }
-  
-
-
-.copyright{
-  position: relative;
-  top: 210px;
-  width:50%;
-  left: 50px;
+.download-content{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:120px;
+  padding:40px 80px;
 }
 
+/* LEFT IMAGE */
 
-
-.copy-right-size{
- width: 50%;
- position: relative;
- top: 150px;
+.download-left{
+  display:flex;
+  justify-content:center;
 }
 
-.PrivacyStatement{
-  width: 140px;
-  position: relative;
-  left: 885px;
-  top: 114px;
-  font-weight: bold;
-  cursor: pointer;
+.illustration{
+  width:350px;
 }
 
-.Legal{
-  width: 60px;
-  position: relative;
-  left: 1022px;
-top: 79px;
-  font-weight: bold;
-  cursor: pointer;
+/* RIGHT CONTENT */
+
+.download-right{
+  max-width:420px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
 }
 
-.Help{
-  width: 60px;
-  position: relative;
-  left: 1080px;
- top: 44px;
-  font-weight: bold;
-  cursor: pointer;
+.download-title{
+  font-size:36px;
 }
 
-.Contact{
-  width: 70px;
-  position: relative;
-  left: 1130px;
-  top: 10px;
-  font-weight: bold;
-  cursor: pointer;
+.download-steps{
+  font-size:18px;
+  line-height:1.8;
 }
 
-.footer-bar{
-  position: relative;
-top:0px;
-  left: 0px;
-  
+/* DIVIDER */
+
+.divider{
+  display:flex;
+  align-items:center;
+  gap:15px;
 }
 
- @media(max-width: 1230px)  {
-  .Background2-size{
-   
-width: 1000px;
-height: 200px;
-  }
-  .GooglePlay{
-   
-    position: relative;
-    left: 400px;
-    bottom: 270px;
-  }
-  .qrCode{
-   
-    position: relative;
-    left: 200px;
-    bottom:50px;
-    
-  }
-  .HowToDownload{
-    position: relative;
-    left: -50px;
-    top: 120px;
-  }
-  
-  .Sign-in{
-    text-align: center;
-    position: relative;
-    top: 100px;
-    left: 820px;
-    width: 50px;
-    color: rgb(63, 63, 231);
-    }
-    .Sign-in2{
-      text-align: center;
-      position: relative;
-      top: 65px;
-      left: 870px;
-      width: 100px;
-      }
-
-      .footer-bar{
-        position: relative;
-        left: -155px;
-      }
-} 
-
-
-@media(max-width: 1130px)  {
-  .Background2-size{
-   
-width: 1000px;
-height: 200px;
-  }
-  
-  .HowToDownload{
-    position: relative;
-    left: 750px;
-    top: -30px;
-  }
-  
-  .Sign-in{
-    text-align: center;
-    position: relative;
-    top: -50px;
-    left: 820px;
-    width: 50px;
-    color: rgb(63, 63, 231);
-    }
-    .Sign-in2{
-      text-align: center;
-      position: relative;
-      top: -84px;
-      left: 870px;
-      width: 100px;
-      }
-
-      .footer-bar{
-        position: relative;
-        left: -185px;
-      }
-
-} 
-
-
-@media(max-width: 1065px)  {
-  .Background2-size{
-   
-width: 700px;
-height: 200px;
-  }
-  .GooglePlay{
-   
-    position: relative;
-    left: 200px;
-    bottom: 270px;
-  }
-  .qrCode{
-   
-    position: relative;
-    left: 0px;
-    bottom:50px;
-  }
-  .HowToDownload{
-    position: relative;
-    left: 550px;
-    top: -30px;
-  }
-  
-  .Sign-in{
-    text-align: center;
-    position: relative;
-    top: -50px;
-    left: 620px;
-    width: 50px;
-    color: rgb(63, 63, 231);
-    }
-    .Sign-in2{
-      text-align: center;
-      position: relative;
-      top: -84px;
-      left: 670px;
-      width: 100px;
-      }
-
-      .footer-bar{
-        position: relative;
-        left: -345px;
-      }
-  
-} 
-
-
-
-
-
-@media(max-width: 829px)  {
-  .Background2-size{
-   
-width: 500px;
-height: 200px;
-  }
-.Background2{
-  top: 150px;
-}
-.copyright{
-  position: relative;
-  top: 160px;
-}
-  .copy-right-size{
-    width: 50%;
-    
-   }
-   .GooglePlay{
-
-    position: relative;
-    left: -400px;
-   top: 60px;
-  }
-  .qrCode{
-   
-    position: relative;
-    left: 0px;
-    top: 70px;
-    
-  }
-  .Back{
-    position: relative;
-  width: 50px;
-    left: 0px; 
-    bottom: 150px;
-    
-    
-  }
-  .HowToDownload{
-    position: relative;
-    left: -200px;
-    top: 250px;
-  }
-  
-  .Sign-in{
-    text-align: center;
-    position: relative;
-    top:240px;
-    left: 70px;
-    width: 50px;
-    color: rgb(63, 63, 231);
-    }
-    .Sign-in2{
-      text-align: center;
-      position: relative;
-      top: 206px;
-      left: 120px;
-      width: 100px;
-      }
-      .footer-bar{
-        position: relative;
-       top: -50px;
-       left: -450px;
-      }
-
-} 
-
-
-@media(max-width: 879px)  {
-  .Background2-size{
-   
-width: 500px;
-height: 200px;
-  }
-  .footer-bar{
-    position: relative;
-
-   left: -570px;
-  }
+.divider span{
+  flex:1;
+  height:1px;
+  background:#ccc;
 }
 
+.divider p{
+  margin:0;
+}
 
-@media(max-width: 630px)  {
-  .Background2-size{
-   
-width: 500px;
-height: 200px;
+/* QR */
+
+.qr{
+  width:200px;
+}
+
+/* GOOGLE PLAY */
+
+.play{
+  width:200px;
+  cursor:pointer;
+}
+
+/* SIGN IN */
+
+.signin-link{
+  color:#3f3fe7;
+  text-decoration:none;
+}
+
+/* FOOTER */
+
+.footer{
+  padding:40px 80px;
+}
+
+.footer-links{
+  display:flex;
+  gap:25px;
+  font-weight:bold;
+}
+
+/* BACKGROUNDS */
+
+.bg-top{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:-1;
+}
+
+.bg-bottom{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  z-index:-1;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:900px){
+
+  .download-content{
+    flex-direction:column;
+    gap:50px;
   }
-  
 
-  .copy-right-size{
-    width: 80%;
-   }
-   .GooglePlay{
-
-    position: relative;
-    left: 0px;
-  top: -100px;
+  .illustration{
+    width:260px;
   }
-  .qrCode{
-   
-    position: relative;
-    left: -200px;
-    top: 100px;
-    
-  }
-  .HowToDownload{
-    position: relative;
-    left: 0px;
-    top: 100px;
-  }
-  .Sign-in{
-    text-align: center;
-    position: relative;
-    top:90px;
-    left: 70px;
-    width: 50px;
-    color: rgb(63, 63, 231);
-    }
-    .Sign-in2{
-      text-align: center;
-      position: relative;
-      top:56px;
-      left: 120px;
-      width: 100px;
-      }
-  
-      .footer-bar{
-        position: relative;
-    
-       left: -850px;
-       top: -10px;
-      }
-} 
 
-
-
-
+}
